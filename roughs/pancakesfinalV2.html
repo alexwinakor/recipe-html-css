@@ -1,0 +1,280 @@
+<!doctype html>
+<html  lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/screen.css">
+  <link rel="canonical"
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML & CSS Recipe</title>
+  <meta name="author" content="Alex Winakor"
+  
+  <style>
+  
+  body,
+dd,
+dl,
+figure {
+  margin: 0;
+  }
+  figure{
+    margin-left: -1.25em;
+    margin-right: -1.25em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+body{
+      background-color: #fff;
+      width: 90%;
+      max-width: 60em;
+      margin: 0 auto;
+   }
+ /*  grayscale: 0123456789abcdef */
+ nav ul{
+   font-family: "Century Gothic", sans-serif;
+   list-style: none;
+   font-size: 1em;
+
+   t
+}
+ nav li{
+   display: block;
+   line-height: 3em;
+
+ }
+ nav a{
+   color: #ccc;
+   padding: 1em
+ }
+
+ ol a{
+   color: #999;
+ }
+
+ /* create section for title and byline, both headings */
+/* position the overall structure, the sections, not the indiviual elements like headings */
+
+/* I decided not to change this because I wanted to nudge the byline closer to my h1*/
+#title {
+  margin-top: 2em;
+  margin-left: 1.85em;
+  margin-right: 2em;
+}
+
+#title h1 {
+  font-family: "Century Gothic", sans-serif;
+  color: #222;
+  font-weight: 100;
+}
+
+#title h2 {
+  font-family: "Century Gothic", sans-serif;
+  font-size: .7em;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #999;
+  margin-top:-1em;
+  margin-bottom: 2em;
+}
+
+section h2 {
+font-family: "Century Gothic", sans-serif;
+font-size: 1.1em;
+text-transform: uppercase;
+color: #444;
+}
+
+section ul{
+  margin-left: 1em;
+  margin-bottom: 2.5em;
+  list-style-type: none;
+  font-family:"Century Gothic", sans-serif;
+  color: #999;
+  font-size: 1em;
+  border-left: solid;
+  border-width: 1px;
+}
+
+section h3{
+
+  font-family: "Century Gothic", sans-serif;
+  font-size: 1.1em;
+  color: #999;
+}
+
+h4{
+
+  font-family: "Century Gothic", sans-serif;
+  color: #999;
+}
+#directions ol{
+  list-style: upper-roman;
+  color: #999;
+  font-size: 1.1em;
+}
+#directions li {
+  font: bold 1em "Trebuchet MS", sans-serif;
+  margin-top: 1em; /* better readablilty with white space */
+}
+#other_recipes{
+  font-family:  sans-serif;
+  font-weight: bold;
+  margin-bottom: 4em;
+  margin-top: 4em;
+  }
+ h4{
+    color: #333;
+    font-size: 1em;
+    margin-left: .8em;
+  }
+p{
+font-size: .9em;
+font-weight: bold;
+color:#aaa;
+margin-left: 1em;
+}
+a{
+  text-decoration: none;
+}
+.back_to_top{
+  text-align: center;
+}
+.back_to_top a{
+  color: #222;
+  font-family: sans-serif;
+  padding: 1em;
+}
+footer{
+  text-align: center;
+  margin-top: 10em;
+  margin-bottom: 4em;
+  font-size: .5em;
+}
+
+footer a{
+  color: #000;
+}
+
+
+/* wider screen layout*/
+  @media (min-width: 60em) {
+   #ingredients,
+   #directions{
+    float: left;
+    width: 46%
+  }
+  #ingredients {
+    margin-left: 5%;
+  }
+
+  #directions{
+    margin-right: -8em;
+    margin-left: 6%;
+    margin-right: -6%;
+  }
+
+  nav li{
+    /*  hide only visually, but have it available for screen readers */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    /* clear floats */
+    clear: both;
+    }
+
+
+  #other_recipes,
+  .jump-link-top {
+    clear: both; /*clear floats (#ingredients and #directions)*/
+  }
+</style>
+
+
+
+
+
+
+
+
+</head>
+  <body>
+    <header>
+<article>
+      <figure>
+        <img alt="Pancakes With Lime Syrup" src="https://www.gordonramsay.com/assets/Recipes/_resampled/CroppedFocusedImage192072050-50-Coconut-Pancakes-1665-rt.jpg" itemprop="image">
+        </figure>
+    </header>
+</article>
+<main>
+<nav>
+  <ul>
+    <li><a href="#ingredients">Ingredients</a></li>
+    <li><a href="#directions"> Directions</a></li>
+    <li><a href="#other_recipes">Something Else To Eat?</a></li>
+  </ul>
+</nav>
+<header id="title">
+<h1>Coconut Pancakes With Mango Slices and Lime Syrup</h1>
+<h2>A recipe by Gordan Ramsay</h2>
+</header>
+<!-- reorder headings (compare document outlines), give #ingredients and #directions more importance to start -->
+<section id="ingredients">
+      <h2>Ingredients</h2>
+        <ul itemprop="recipeIngredient">
+        <li>100g unsweetened desiccated coconut</li>
+        <li>100g plain flour</li>
+        <li>1½ tsp baking powder</li>
+        <li>1 egg, beaten</li>
+        <li>250ml coconut milk </li>
+        <li>1 tbsp runny honey</li>
+        <li>Oil, for frying</li>
+        <li>1 ripe mango</li>
+        </ul>
+
+        <section id="lime-syrup">
+              <h3>For the Lime Syrup</h3>
+                <ul>
+                <li> 150 <abbr title="grams">g</abbr> caster sugar</li>
+                <li> Juice of 4 limes, finely grated zest of 1 of the limes</li>
+                </ul>
+        </section>
+</section>
+<section id="directions">
+  <header>
+    <h2>Method</h2>
+    <h3 itemprop="recipeYield">Makes 12 pancakes</h3>
+  </header>
+    <ol itemprop="recipeInstructions">
+      <li>To make the pancake batter, put the coconut into a blender and blitz for <time datetime="1m" itemprop="cookTime" >1 minute</time> or until it becomes finely chopped. Add the flour and baking powder and pulse for a couple of seconds to combine. Pour into a mixing bowl.</li>
+      <li> Make a well in the flour and add the egg. Stir into the flour, then add the coconut milk and honey, mixing until a smooth batter forms. Cover and leave to rest for <time datetime="15m" itemprop="cookTime" >15 minutes</time>.</li>
+      <li> Meanwhile, make the lime syrup. Put the sugar, 150ml water, the lime juice and zest into a small saucepan or frying pan. Bring to a gentle simmer and stir until the sugar has dissolved. Continue to simmer for <time datetime="10m" itemprop="cookTime" >10 minutes</time> until the liquid has reduced slightly and developed a syrupy consistency. Taste and add a little more lime zest if necessary. Leave to cool until just warm.</li>
+      <li> To cook the pancakes, heat a little oil in a large non-stick frying pan, swirling it around to cover the bottom. Place heaped tablespoons of batter in the pan (you will probably have to do this in batches) and cook over a medium-low heat for <time datetime="2.5m" itemprop="cookTime" >2-3 minutes</time> until golden. Turn over with a palette knife and repeat on the other side until golden and cooked through. Remove and set aside in a warm place while you cook the remaining batter.</li>
+      <li>Peel the mango and cut the flesh into thin slices. Serve the pancakes with slices of mango and a drizzle of lime syrup on top.</p>
+    </ol>
+</section>
+
+
+  <section id="other_recipes">
+
+      <h4>Still Hungry?</h4>
+      <ol>
+      <a href="https://www.gordonramsay.com/gr/recipes/halloumi-courgette-and-herb-cakes/"> <li> Halloumi Courgette and Herb Cakes</li></a>
+      <a href="https://www.gordonramsay.com/gr/recipes/stuffed-roast-chicken/"><li> Stuffed Roast Chicken</li></a>
+      <a href="https://www.gordonramsay.com/gr/recipes/indulgent-mini-chocolate-tarts-with-peanut-brittle/"><li> Chocolate Tarts with Peanut Brittle</li></a>
+    </ol>
+    </section>
+  <!-- </div> -->
+    <div class="back_to_top">
+          <a href="#" title="Back to Top"><span class="arrow-up">⇡</span> <span class="jump-link-text">Back to top</span></a>
+        </div>
+</body>
+<footer><small>© Copyright 2016 <a href="www.gordonramsayrestaurants.com">www.gordonramsayrestaurants.com</a> </small></footer>
+</html>
