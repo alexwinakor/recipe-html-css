@@ -1,2 +1,1 @@
-# recipe-html-css
-Pancake Recipe
+HTML and CSS recipe
