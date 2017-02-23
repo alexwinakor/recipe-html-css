@@ -1,0 +1,189 @@
+body,
+dd,
+dl,
+figure {
+  margin: 0;
+  }
+  figure{
+    margin-left: -1.25em;
+    margin-right: -1.25em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+body{
+      background-color: #fff;
+      width: 90%;
+      max-width: 60em;
+      margin: 0 auto;
+   }
+ /*  grayscale: 0123456789abcdef */
+ nav ul{
+   font-family: "Century Gothic", sans-serif;
+   list-style: none;
+   font-size: 1em;
+
+   t
+}
+ nav li{
+   display: block;
+   line-height: 3em;
+
+ }
+ nav a{
+   color: #ccc;
+   padding: 1em
+ }
+
+ ol a{
+   color: #999;
+ }
+
+ /* create section for title and byline, both headings */
+/* position the overall structure, the sections, not the indiviual elements like headings */
+
+/* I decided not to change this because I wanted to nudge the byline closer to my h1*/
+#title {
+  margin-top: 2em;
+  margin-left: 1.85em;
+  margin-right: 2em;
+}
+
+#title h1 {
+  font-family: "Century Gothic", sans-serif;
+  color: #222;
+  font-weight: 100;
+}
+
+#title h2 {
+  font-family: "Century Gothic", sans-serif;
+  font-size: .7em;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #999;
+  margin-top:-1em;
+  margin-bottom: 2em;
+}
+
+section h2 {
+font-family: "Century Gothic", sans-serif;
+font-size: 1.1em;
+text-transform: uppercase;
+color: #444;
+}
+
+section ul{
+  margin-left: 1em;
+  margin-bottom: 2.5em;
+  list-style-type: none;
+  font-family:"Century Gothic", sans-serif;
+  color: #999;
+  font-size: 1em;
+  border-left: solid;
+  border-width: 1px;
+}
+
+section h3{
+
+  font-family: "Century Gothic", sans-serif;
+  font-size: 1.1em;
+  color: #999;
+}
+
+h4{
+
+  font-family: "Century Gothic", sans-serif;
+  color: #999;
+}
+#directions ol{
+  list-style: upper-roman;
+  color: #999;
+  font-size: 1.1em;
+}
+#directions li {
+  font: bold 1em "Trebuchet MS", sans-serif;
+  margin-top: 1em; /* better readablilty with white space */
+}
+#other_recipes{
+  font-family:  sans-serif;
+  font-weight: bold;
+  margin-bottom: 4em;
+  margin-top: 4em;
+  }
+
+#other_recipes li{
+  list-style-type: none;
+}
+ h4{
+    color: #333;
+    font-size: 1em;
+    margin-left: .8em;
+  }
+p{
+font-size: .9em;
+font-weight: bold;
+color:#aaa;
+margin-left: 1em;
+}
+a{
+  text-decoration: none;
+}
+.back_to_top{
+  text-align: center;
+}
+.back_to_top a{
+  color: #222;
+  font-family: sans-serif;
+  padding: 1em;
+}
+footer{
+  text-align: center;
+  margin-top: 10em;
+  margin-bottom: 4em;
+  font-size: .5em;
+}
+
+footer a{
+  color: #000;
+}
+
+
+/* wider screen layout*/
+  @media (min-width: 60em) {
+   #ingredients,
+   #directions{
+    float: left;
+    width: 46%
+  }
+  #ingredients {
+    margin-left: 5%;
+  }
+
+  #directions{
+    margin-right: -8em;
+    margin-left: 6%;
+    margin-right: -6%;
+  }
+
+  nav li{
+    /*  hide only visually, but have it available for screen readers */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    /* clear floats */
+    clear: both;
+    }
+
+
+  #other_recipes,
+  .jump-link-top {
+    clear: both; /*clear floats (#ingredients and #directions)*/
+  }
