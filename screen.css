@@ -23,9 +23,8 @@ body{
    font-family: "Century Gothic", sans-serif;
    list-style: none;
    font-size: 1em;
-
-   t
 }
+
  nav li{
    display: block;
    line-height: 3em;
@@ -187,3 +186,4 @@ footer a{
   .jump-link-top {
     clear: both; /*clear floats (#ingredients and #directions)*/
   }
+}
